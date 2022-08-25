@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+
+
+  tasks: 
+  - name: debug some creds please
+    debug: 
+      msg: "{{ ansible_facts }}" 
+    no_log: false
+
+
